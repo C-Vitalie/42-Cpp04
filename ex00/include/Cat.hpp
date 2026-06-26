@@ -16,7 +16,6 @@ public:
 	~Cat();
 
 	/* Other */
-	std::string	getType() const;
 	void makeSound() const;
 };
 

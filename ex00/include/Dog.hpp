@@ -12,11 +12,10 @@ public:
 	/* Operator */
 	Dog & operator=(const Dog& src);
 
-	/*  Destructor */
+	/* Destructor */
 	~Dog();
 
 	/* Other */
-	std::string	getType() const;
 	void makeSound() const;
 };
 
