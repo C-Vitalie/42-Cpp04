@@ -14,7 +14,7 @@ FILES		= main.cpp\
 
 
 SRCS		= $(addprefix $(SRC_DIR), $(FILES))
-OBJS		= $(addprefix $(OBJ_DIR), $(SRCS:.cpp=.o))
+OBJS		= $(addprefix $(OBJ_DIR), $(FILES:.cpp=.o))
 DEPS		= $(OBJS:.o=.d)
 
 
@@ -40,7 +40,7 @@ $(NAME): $(OBJS)
 	@$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 	@printf "\n\033[1;32m[✓] Compilation done '$(NAME)' is ready\033[0m\n"
 
-$(OBJ_DIR)%.o: %.cpp
+$(OBJ_DIR)%.o: $(SRC_DIR)%.cpp
 	@mkdir -p $(OBJ_DIR)
 	@$(CXX) $(CXXFLAGS) -c $< -o $@
 	@echo "[PROGRESS] $<"

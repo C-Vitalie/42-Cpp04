@@ -31,5 +31,5 @@ std::string	WrongAnimal::getType() const {
 /* Other */
 
 void		WrongAnimal::makeSound() const {
-    std::cout << "* Bruit d'animal indéfinissable *" << std::endl;
+    std::cout << "* Inaudible wronganimal noise *" << std::endl;
 }

@@ -15,13 +15,13 @@ public:
 	WrongAnimal & operator=(const WrongAnimal& src);
 
 	/* Destructor */
-	virtual ~WrongAnimal();
+	~WrongAnimal();
 
 	/* Geter*/
-	virtual	std::string	getType() const;
+	std::string	getType() const;
 
 	/* Other */
-	virtual void		makeSound() const;
+	void		makeSound() const;
 
 };
 
