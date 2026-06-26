@@ -30,9 +30,6 @@ Cat::~Cat() {
 }
 
 /* Geter */
-std::string	Cat::getType() const {
-	return (this->type);
-}
 
 /* Other */
 

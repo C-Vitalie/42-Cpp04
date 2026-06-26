@@ -19,7 +19,6 @@ public:
 	~Dog();
 
 	/* Other */
-	std::string	getType() const;
 	void makeSound() const;
 };
 

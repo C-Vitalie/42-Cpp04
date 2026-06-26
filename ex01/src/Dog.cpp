@@ -30,9 +30,6 @@ Dog::~Dog() {
 }
 
 /* Geter */
-std::string	Dog::getType() const {
-	return (this->type);
-}
 
 /* Other */
 
