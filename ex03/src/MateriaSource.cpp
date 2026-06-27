@@ -1,5 +1,6 @@
 #include "MateriaSource.hpp"
 
+/* Constructor  */
 MateriaSource::MateriaSource() {
 	for (int i = 0; i < 4; i++)
 		this->_learnsed[i] = NULL;
@@ -14,6 +15,7 @@ MateriaSource::MateriaSource(const MateriaSource& src) {
 	}
 }
 
+/* Operator */
 MateriaSource& MateriaSource::operator=(const MateriaSource& src) {
 	if (this != &src) {
 		for (int i = 0; i < 4; i++) {
@@ -28,6 +30,7 @@ MateriaSource& MateriaSource::operator=(const MateriaSource& src) {
 	return (*this);
 }
 
+/* Destructor */
 MateriaSource::~MateriaSource() {
 	for (int i = 0; i < 4; i++) {
 		if (this->_learnsed[i])
@@ -35,6 +38,7 @@ MateriaSource::~MateriaSource() {
 	}
 }
 
+/* Other */
 void MateriaSource::learnMateria(AMateria* m) {
 	if (!m) return;
 	for (int i = 0; i < 4; i++) {
@@ -52,5 +56,5 @@ AMateria* MateriaSource::createMateria(std::string const & type) {
 			return (this->_learnsed[i]->clone());
 		}
 	}
-	return (0); // Type inconnu
+	return (0);
 }

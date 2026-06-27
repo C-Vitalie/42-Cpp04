@@ -8,11 +8,17 @@ private:
 	AMateria* _learnsed[4];
 
 public:
+	/* Destructor */
 	MateriaSource();
 	MateriaSource(const MateriaSource& src);
+
+	/* Opertator */
 	MateriaSource& operator=(const MateriaSource& src);
+
+	/* Destructor */
 	~MateriaSource();
 
+	/* Other */
 	void learnMateria(AMateria* m);
 	AMateria* createMateria(std::string const & type);
 };

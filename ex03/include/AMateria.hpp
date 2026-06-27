@@ -21,9 +21,7 @@ public:
 
 	/* Geter */
 	std::string const & getType() const;
-
-	/* Seter */
-
+	
 	/* Other */
 	virtual AMateria* clone() const = 0;
 	virtual void use(ICharacter& target);

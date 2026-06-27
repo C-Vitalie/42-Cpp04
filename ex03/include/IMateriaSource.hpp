@@ -6,7 +6,10 @@
 class IMateriaSource
 {
 public:
+	/* Destructor */
 	virtual ~IMateriaSource() {}
+
+	/* Other */
 	virtual void learnMateria(AMateria*) = 0;
 	virtual AMateria* createMateria(std::string const & type) = 0;
 };
